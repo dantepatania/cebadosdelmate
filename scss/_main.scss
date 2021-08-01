@@ -1,0 +1,101 @@
+.main {
+    overflow: hidden;
+}
+
+.main__title {
+    background-image: url(../img/mate_01.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include alto_ancho(60vh, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.row {
+    h2 {
+        font-size: 5.5rem;
+    }
+}
+.lead {
+    font-size: 3rem;
+}
+
+.main__beneficios {
+    @include alto_ancho (20vh, 100%);
+    background: $colorMarron;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;  
+        img {
+            @include alto_ancho (5vh, 5vh)
+        }
+        h3 {
+            font-size: 2rem;
+            color: #000;
+        }
+    }
+}
+
+.main__conocenos {
+    width: 100%;
+    padding: 5rem;
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        img {
+            height: 60vh;
+            width: auto;
+            border-radius: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .lead {
+        font-size: 1.5rem;
+    }
+    .row {
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    .main__conocenos {
+        width: 100%;
+        padding: 5rem;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            p {
+                font-size: 2rem;
+            }
+            img {
+                height: 60vh;
+                width: auto;
+                border-radius: 3%;
+            }
+        }
+    }
+}

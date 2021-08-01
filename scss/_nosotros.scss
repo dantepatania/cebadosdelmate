@@ -1,0 +1,44 @@
+.main__nosotros {
+    width: 100%;
+    padding: 0rem 4rem 4rem 4rem;
+    h1 {
+        text-align: center;
+        padding: 5rem;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            @include alto_ancho (60vh, auto);
+            border-radius: 3%;
+        }
+        p {
+            padding: 7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .lead {
+        font-size: 1.5rem;
+    }
+    .main__nosotros {
+        width: 100%;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            p {
+                font-size: 2rem;
+                padding: 2rem;
+            }
+            img {
+                @include alto_ancho (60vh, auto);
+                border-radius: 3%;
+            }
+        }
+    }
+}
