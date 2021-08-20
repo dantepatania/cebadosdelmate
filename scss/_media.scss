@@ -55,6 +55,19 @@
             font-weight: 600;
         }
     }
+
+    .main__title {
+        h1 {
+            color: #000
+        }
+    }
+    .main__beneficios {
+        div {
+            h3 {
+                font-size: 1rem;
+            }
+        }
+    }
     .main__conocenos {
         width: 100%;
         padding: 5rem;

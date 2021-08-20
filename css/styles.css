@@ -111,7 +111,7 @@ header {
 footer div {
   background-color: #5e3023;
   padding: 2vh;
-  font-size: 10px;
+  font-size: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -481,6 +481,12 @@ h1 {
   .row h2 {
     font-size: 2rem;
     font-weight: 600;
+  }
+  .main__title h1 {
+    color: #000;
+  }
+  .main__beneficios div h3 {
+    font-size: 1rem;
   }
   .main__conocenos {
     width: 100%;
