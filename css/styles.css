@@ -490,7 +490,7 @@ h1 {
   }
   .main__conocenos {
     width: 100%;
-    padding: 5rem;
+    padding: 0rem;
   }
   .main__conocenos div {
     display: -webkit-box;
@@ -508,6 +508,8 @@ h1 {
   }
   .main__conocenos div p {
     font-size: 2rem;
+    text-align: center;
+    margin: 10vh;
   }
   .main__conocenos div img {
     height: 60vh;

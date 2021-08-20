@@ -70,7 +70,7 @@
     }
     .main__conocenos {
         width: 100%;
-        padding: 5rem;
+        padding: 0rem;
         div {
             display: flex;
             flex-direction: column;
@@ -78,6 +78,8 @@
             justify-content: space-around;
             p {
                 font-size: 2rem;
+                text-align: center;
+                margin: 10vh;
             }
             img {
                 height: 60vh;
