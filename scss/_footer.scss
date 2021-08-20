@@ -1,32 +1,33 @@
-$padding: 1vh;
-
-.footer {
-    background-color: $colorMarron;
-    padding: $padding*2;
-    font-size: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+footer {
+    div {
+        background-color: $colorMarron;
+        padding: 2vh;
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    
 }
 
 .footer__p {
     display: flex;
     justify-content: space-evenly;
-    color: #fff;
+    color: $white;
     text-align: center;
     align-items: center;
         p {
-            font-size: $padding*2;
+            font-size: 2vh;
             }
         a {
             img {
-                height: $padding*10;
+                height: 10vh;
             }
         }
 }
 
 .footer__text {
-    color: #fff;
+    color: $white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,17 +38,10 @@ $padding: 1vh;
     justify-content: center;
     a {
         img {
-            height: $padding*3;
-            padding: $padding*2;
+            height: 3vh;
+            padding: 2vh;
             vertical-align: initial;
             box-sizing: initial;
         }
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
     }
 }

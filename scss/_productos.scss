@@ -1,8 +1,5 @@
-$padding0: 0px;
-$rem: 2.5rem;
-
-.main {
-    font-size: $rem;
+main {
+    font-size: 2.5rem;
 }
 
 .main__productos {
@@ -19,10 +16,10 @@ $rem: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: $rem*2;
+    height: 5rem;
     background-color: $colorMarronClaro;
     h2 {
-        color: #fff;
+        color: $white;
     }
 }
 
@@ -33,9 +30,9 @@ $rem: 2.5rem;
     padding: 3rem;
     .card {
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-        width: 20vw;
+        width: 450px;
         img {
-            height: 20em;
+            height: 600px;
         }
         .card-body {
             h5 {
@@ -50,18 +47,5 @@ $rem: 2.5rem;
     }
 }
 .container-fluid {
-    padding: $padding0;
-}
-
-
-@media screen and (max-width: 576px) {
-    .main__barra {
-        padding: $padding0;
-        .card {
-            width: 50%;
-            img {
-                height: 10em;
-            }
-        }
-    }
+    padding: 0px;
 }
