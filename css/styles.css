@@ -27,7 +27,7 @@ header {
   z-index: 10;
 }
 
-.header__navbar, .header__navbar .header__menu {
+header .header__navbar, header .header__navbar .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,11 +40,29 @@ header {
   padding: 1rem 1.5rem;
 }
 
+header .header__navbar a .header__logo {
+  height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+header .header__navbar .header__menu .nav-item {
+  margin-left: 5rem;
+}
+
+header .header__navbar .header__menu .nav-item .nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
 .hamburger {
   display: none;
 }
 
-.bar {
+.hamburger .bar {
   display: block;
   height: 3px;
   width: 25px;
@@ -52,16 +70,6 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #fff;
-}
-
-.nav-item {
-  margin-left: 5rem;
-}
-
-.nav-link {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #fff;
 }
 
 .nav-link:hover {
@@ -98,14 +106,6 @@ header {
 .nav-link.fromLeft:after {
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
-}
-
-.header__logo {
-  height: 10vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 10;
 }
 
 footer div {
@@ -476,7 +476,7 @@ h1 {
 /* INDEX QUERIES */
 @media screen and (max-width: 576px) {
   .lead {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .row h2 {
     font-size: 2rem;
